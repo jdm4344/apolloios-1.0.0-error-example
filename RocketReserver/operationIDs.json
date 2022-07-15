@@ -1,0 +1,26 @@
+{
+  "9e5a9ce378a6956a282ce118d53ded9d8c11239b4097672e09e32bcb6e702b7c": {
+    "name": "BookTrip",
+    "source": "mutation BookTrip($id: ID!) {\n  bookTrips(launchIds: [$id]) {\n    __typename\n    success\n    message\n    launches {\n      __typename\n      id\n    }\n  }\n}"
+  },
+  "29da3d7d50859131f5f88541d3c2fb6ee2e93def79f4a32f30497ff4c2aeccec": {
+    "name": "CancelTrip",
+    "source": "mutation CancelTrip($id: ID!) {\n  cancelTrip(launchId: $id) {\n    __typename\n    success\n    message\n    launches {\n      __typename\n      id\n    }\n  }\n}"
+  },
+  "c0d3987d515624afe50c94eb3d814028dec9d11649f7d0f021ea0f7968c28a2f": {
+    "name": "LaunchDetails",
+    "source": "query LaunchDetails($launchId: ID!) {\n  launch(id: $launchId) {\n    __typename\n    id\n    site\n    mission {\n      __typename\n      name\n      missionPatch(size: LARGE)\n    }\n    rocket {\n      __typename\n      name\n      type\n    }\n    isBooked\n  }\n}"
+  },
+  "5e623a4de7797b605f72e04c877ce6823575fceab0769bcb44e77e3dc1579a82": {
+    "name": "LaunchList",
+    "source": "query LaunchList($cursor: String) {\n  launches(after: $cursor) {\n    __typename\n    hasMore\n    cursor\n    launches {\n      __typename\n      id\n      site\n      mission {\n        __typename\n        name\n        missionPatch(size: SMALL)\n      }\n    }\n  }\n}"
+  },
+  "c85d3868f7d7da5f8fd1caa9b699329d59d66dbad8a0ca40c7ee8d5c2d922f0f": {
+    "name": "Login",
+    "source": "mutation Login($loginEmail: String) {\n  login(email: $loginEmail) {\n    __typename\n    token\n  }\n}"
+  },
+  "6e0e9a67ef917f5b13fd80b5127cfb80e22704807345da83b85f632205bb70dc": {
+    "name": "TripsBooked",
+    "source": "subscription TripsBooked {\n  tripsBooked\n}"
+  }
+}
