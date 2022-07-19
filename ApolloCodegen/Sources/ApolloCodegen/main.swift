@@ -26,7 +26,14 @@ import ArgumentParser
 //"${SCRIPT_PATH}"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile="schema.json" API.swift
 //#"${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
 
-
+//# Don't run this during index builds
+//if [ $ACTION = "indexbuild" ]; then exit 0; fi
+//
+//cd "${SRCROOT}"/ApolloCodegen
+//xcrun -sdk macosx swift run ApolloCodegen generate
+//
+//# propagate the xcrun call's return code to Xcode
+//exit $?
 
 
 // An outer structure to hold all commands and sub-commands handled by this script.

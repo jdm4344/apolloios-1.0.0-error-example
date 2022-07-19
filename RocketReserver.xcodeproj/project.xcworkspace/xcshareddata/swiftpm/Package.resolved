@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Apollo",
+        "repositoryURL": "https://github.com/apollographql/apollo-ios",
+        "state": {
+          "branch": null,
+          "revision": "85e70159ed8dedb75a0c77846afd5dbbfe727759",
+          "version": "1.0.0-beta.1"
+        }
+      },
+      {
         "package": "InflectorKit",
         "repositoryURL": "https://github.com/mattt/InflectorKit",
         "state": {

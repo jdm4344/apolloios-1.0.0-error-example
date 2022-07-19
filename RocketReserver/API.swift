@@ -23,8 +23,6 @@ public final class BookTripMutation: GraphQLMutation {
 
   public let operationName: String = "BookTrip"
 
-  public let operationIdentifier: String? = "9e5a9ce378a6956a282ce118d53ded9d8c11239b4097672e09e32bcb6e702b7c"
-
   public var id: GraphQLID
 
   public init(id: GraphQLID) {
@@ -181,8 +179,6 @@ public final class CancelTripMutation: GraphQLMutation {
     """
 
   public let operationName: String = "CancelTrip"
-
-  public let operationIdentifier: String? = "29da3d7d50859131f5f88541d3c2fb6ee2e93def79f4a32f30497ff4c2aeccec"
 
   public var id: GraphQLID
 
@@ -347,8 +343,6 @@ public final class LaunchDetailsQuery: GraphQLQuery {
     """
 
   public let operationName: String = "LaunchDetails"
-
-  public let operationIdentifier: String? = "c0d3987d515624afe50c94eb3d814028dec9d11649f7d0f021ea0f7968c28a2f"
 
   public var launchId: GraphQLID
 
@@ -592,8 +586,6 @@ public final class LaunchListQuery: GraphQLQuery {
 
   public let operationName: String = "LaunchList"
 
-  public let operationIdentifier: String? = "5e623a4de7797b605f72e04c877ce6823575fceab0769bcb44e77e3dc1579a82"
-
   public var cursor: String?
 
   public init(cursor: String? = nil) {
@@ -815,8 +807,6 @@ public final class LoginMutation: GraphQLMutation {
 
   public let operationName: String = "Login"
 
-  public let operationIdentifier: String? = "c85d3868f7d7da5f8fd1caa9b699329d59d66dbad8a0ca40c7ee8d5c2d922f0f"
-
   public var loginEmail: String?
 
   public init(loginEmail: String? = nil) {
@@ -906,8 +896,6 @@ public final class TripsBookedSubscription: GraphQLSubscription {
     """
 
   public let operationName: String = "TripsBooked"
-
-  public let operationIdentifier: String? = "6e0e9a67ef917f5b13fd80b5127cfb80e22704807345da83b85f632205bb70dc"
 
   public init() {
   }

@@ -10,6 +10,8 @@
 		1720FF5E2881A79700EDCA6E /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1720FF5D2881A79700EDCA6E /* Apollo */; };
 		1720FF602881A79700EDCA6E /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 1720FF5F2881A79700EDCA6E /* ApolloWebSocket */; };
 		17C539BA287F552000B08C0B /* ApolloCodegen in Resources */ = {isa = PBXBuildFile; fileRef = 17C539B9287F552000B08C0B /* ApolloCodegen */; };
+		17CDB14C2886D900005E12F4 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 17CDB14A2886D900005E12F4 /* schema.graphqls */; };
+		17CDB14D2886D900005E12F4 /* introspection_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 17CDB14B2886D900005E12F4 /* introspection_response.json */; };
 		33257088276A92B500F3E8B4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33257087276A92B500F3E8B4 /* NotificationView.swift */; };
 		9B0705F923AC34CB00DCA904 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0705F823AC34CB00DCA904 /* ProfileViewController.swift */; };
 		9B4AA8A6239BCEB4003E1300 /* BookTrip.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9B4AA8A5239BCEB4003E1300 /* BookTrip.graphql */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		17C539B9287F552000B08C0B /* ApolloCodegen */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ApolloCodegen; sourceTree = "<group>"; };
+		17CDB14A2886D900005E12F4 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		17CDB14B2886D900005E12F4 /* introspection_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = introspection_response.json; sourceTree = "<group>"; };
 		331E671A276ACAD70010E64C /* TripsBooked.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripsBooked.graphql; sourceTree = "<group>"; };
 		33257087276A92B500F3E8B4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		9B0705F823AC34CB00DCA904 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		9B8B0EF4237CE6A8001326EB /* RocketReserver */ = {
 			isa = PBXGroup;
 			children = (
+				17CDB14B2886D900005E12F4 /* introspection_response.json */,
+				17CDB14A2886D900005E12F4 /* schema.graphqls */,
 				9B8B0F31237CE996001326EB /* API.swift */,
 				9B8B0F33237CE9DF001326EB /* Network.swift */,
 				9B5A56DB25099A700015FBC3 /* NetworkInterceptorProvider.swift */,
@@ -205,7 +211,9 @@
 				17C539BA287F552000B08C0B /* ApolloCodegen in Resources */,
 				9B4AA8A6239BCEB4003E1300 /* BookTrip.graphql in Resources */,
 				9B8B0F01237CE6AB001326EB /* Assets.xcassets in Resources */,
+				17CDB14C2886D900005E12F4 /* schema.graphqls in Resources */,
 				9B4AA8A8239BCEC5003E1300 /* CancelTrip.graphql in Resources */,
+				17CDB14D2886D900005E12F4 /* introspection_response.json in Resources */,
 				9B685F51238BE4A10084DA15 /* Login.graphql in Resources */,
 				9B8B0EFF237CE6A8001326EB /* Main.storyboard in Resources */,
 				9B97EF20237E133D00A714ED /* LaunchDetails.graphql in Resources */,
